@@ -3,7 +3,23 @@ import { createWebHistory, createRouter } from "vue-router";
 const routes = [
    {
       path: '/',
-      component: () => import('@/App.vue'),
+      component: () => import('@/views/Home.vue'),
+   },
+   {
+      path: '/deposit',
+      component: () => import('@/views/Deposit.vue'),
+   },
+   {
+      path: '/withdraw',
+      component: () => import('@/views/Withdraw.vue'),
+   },
+   {
+      path: '/trade',
+      component: () => import('@/views/Trade.vue'),
+   },
+   {
+      path: '/exchange',
+      component: () => import('@/views/Exchange.vue'),
    },
 ]
 
