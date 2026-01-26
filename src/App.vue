@@ -6,28 +6,31 @@
 	const route = useRoute();
 	const router = useRouter();
 	const currRoute = computed(() => route.path);
-	console.log(currRoute);
+	
+	
 </script>
 
 <template>
 	<div class="page">
 		<div
-			:class="['page-title hover-filter-drop-shadow pt-20', { expand: currRoute != '/' }]"
+			:class="['page-title ', { expand: currRoute != '/' }]"
 			@click="router.back()">
-			<div class="page-title-arrow">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					fill="currentColor"
-					class="bi bi-arrow-left"
-					viewBox="0 0 16 16">
-					<path
-						fill-rule="evenodd"
-						d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-				</svg>
+			<div class="page-title-wrap row items-center hover-filter-drop-shadow">
+				<div class="page-title-arrow">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="currentColor"
+						class="bi bi-arrow-left hover-filter-drop-shadow"
+						viewBox="0 0 16 16">
+						<path
+							fill-rule="evenodd"
+							d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+					</svg>
+				</div>
+				<h1 class="hover-filter-drop-shadow">Крипто Бот</h1>
 			</div>
-			<h1>Крипто Бот</h1>
 		</div>
 		<router-view></router-view>
 	</div>
@@ -37,10 +40,13 @@
 	.page-title {
 		display: flex;
 		align-items: center;
-		margin-bottom: 30px;
+		padding: 20px 0;
 		gap: 10px;
 		cursor: pointer;
 		transition: filter .3s ease-in-out;
+		position: relative;
+		z-index: 110;
+		background: #242424;
 	}
 	/* .page-title:hover{
 		filter: drop-shadow(0 0 2em #ffffffaa);

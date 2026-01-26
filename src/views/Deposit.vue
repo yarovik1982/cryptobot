@@ -1,8 +1,11 @@
 <script setup>
+import BalanceList from '@/components/BalanceList.vue';
+
 
 </script>
 <template>
-    <h1>Deposit</h1>
+    
+    <BalanceList/>
 </template>
 <style scoped >
 

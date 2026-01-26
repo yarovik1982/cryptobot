@@ -1,8 +1,11 @@
 <script setup>
+import BalanceList from '@/components/BalanceList.vue';
+
 
 </script>
 <template>
-    <h1>Withdraw</h1>
+    
+    <BalanceList/>
 </template>
 <style scoped >
 
