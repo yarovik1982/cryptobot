@@ -6,15 +6,18 @@
 	const route = useRoute();
 	const router = useRouter();
 	const currRoute = computed(() => route.path);
-	
-	
+	const showPageTitle = computed(() => {
+		const allowedRoutes = ["/", "/deposit", "/withdraw", "/exchange", "/trade"];
+		return allowedRoutes.includes(currRoute.value);
+	});
 </script>
 
 <template>
 	<div class="page">
 		<div
+			v-if="showPageTitle"
 			:class="['page-title ', { expand: currRoute != '/' }]"
-			@click="router.back()">
+			@click="router.push('/')">
 			<div class="page-title-wrap row items-center hover-filter-drop-shadow">
 				<div class="page-title-arrow">
 					<svg
@@ -43,7 +46,7 @@
 		padding: 20px 0;
 		gap: 10px;
 		cursor: pointer;
-		transition: filter .3s ease-in-out;
+		transition: filter 0.3s ease-in-out;
 		position: relative;
 		z-index: 110;
 		background: #242424;
