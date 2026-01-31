@@ -1,0 +1,1 @@
+import{C as o}from"./CoinOperation-C0icnRon.js";import{_ as t,k as a,o as r}from"./index-CXUcNOQi.js";import"./useBalanceList-CBkA53Kz.js";const e={__name:"WithdrawCoin",setup(_){return(s,c)=>(r(),a(o))}},m=t(e,[["__scopeId","data-v-12bea002"]]);export{m as default};
