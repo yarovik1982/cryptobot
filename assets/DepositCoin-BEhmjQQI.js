@@ -1,0 +1,1 @@
+import{C as o}from"./CoinOperation-FpxDZkCL.js";import{k as r,o as t}from"./index-ZDvemcsz.js";import"./useBalanceList-CT5GTNrK.js";const i={__name:"DepositCoin",setup(e){return(a,p)=>(t(),r(o))}};export{i as default};

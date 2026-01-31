@@ -1,0 +1,1 @@
+import{B as r}from"./BalanceList-D20ZpSCM.js";import{k as t,o as a}from"./index-ZDvemcsz.js";import"./useBalanceList-CT5GTNrK.js";const m={__name:"Withdraw",setup(o){return(e,c)=>(a(),t(r))}};export{m as default};

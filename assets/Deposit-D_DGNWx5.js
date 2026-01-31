@@ -1,1 +1,0 @@
-import{B as o}from"./BalanceList-BZgh4s8S.js";import{k as t,o as e}from"./index-BvnaGof4.js";import"./useBalanceList-Ch2E4EM0.js";const m={__name:"Deposit",setup(r){return(a,s)=>(e(),t(o))}};export{m as default};
