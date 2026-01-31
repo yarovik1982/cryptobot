@@ -10,7 +10,7 @@ const innerText = ref([
 ])
 </script>
 <template>
-   <div class="mt-40">
+   <div class="mt-20">
       <div :class="['banner w-100',innerText[activeIndex].bg]">
          <div class="banner-inner">
             {{innerText[activeIndex].text}}
@@ -19,7 +19,7 @@ const innerText = ref([
       <div class="row mt-10 justify-center">
          <span :class="['dot',{ active:activeIndex === index}]" v-for="(_, index) in counter" :key="index" @click="activeIndex = index"></span>
       </div>
-      <div class="row mt-20 justify-center"></div>
+      <div class="row justify-center"></div>
    </div>
 </template>
 <style scoped >
@@ -27,9 +27,11 @@ const innerText = ref([
    display: flex;
    align-items: center;
    height: 70px;
+   border-radius: 10px;
    background-color: teal;
    position: relative;
    font-size: 14px;
+   overflow: hidden;
    /* padding-left:  20px; */
    /* text-align: left; */
 }
@@ -39,6 +41,7 @@ const innerText = ref([
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
 }
 .teal{
    background-color: teal;
@@ -49,15 +52,15 @@ const innerText = ref([
 .yellow{
    background-color: yellow;
 }
-.banner::before{
+.banner-inner::before{
    position: absolute;
    content: '';
    background-color: #fff;
-   width: 2px;
-   height: 90%;
-   top: 50%;
-   left: 10px;
-   transform: translate(0,-50%);
+   width: 8px;
+   height: 100%;
+   top: 0;
+   left: 0px;
+   /* transform: translate(0,-50%); */
 }
 .dot{
    width: 10px;

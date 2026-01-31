@@ -13,7 +13,7 @@ import Overlay from "@/components/Overlay.vue";
 <template>
 	<Overlay/>
 	<Header />
-	<Balance class="flex-column w-100 justify-center items-center mt-20" />
+	<Balance class="flex-column w-100 justify-center items-center" />
 	<Navigation />
    <Banner/>
    

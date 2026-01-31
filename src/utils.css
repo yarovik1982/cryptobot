@@ -22,6 +22,10 @@
    width: 0;
 }
 
+.justify-around {
+   justify-content: space-around;
+}
+
 .justify-center {
    justify-content: center;
 }
