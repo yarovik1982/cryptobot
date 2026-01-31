@@ -37,7 +37,7 @@
 					<div class="col flex-row"></div>
 					<div class="col flex-row flex-grow-auto justify-center font-14">Выберите способ оплаты</div>
 					<div class="col flex-row">
-						<button class="btn btn-close rounded-50 hover-filter-drop-shadow ">&times;</button>
+						<button class="btn btn-close rounded-50 hover-filter-drop-shadow pointer" @click="overlayStore.close()">&times;</button>
 					</div>
 				</div>
 				<div class="dialog-body">
